@@ -3,7 +3,7 @@
 ## 📋 Thông tin nhóm
 - **Môn học:** Machine Learning / Python for Data Analytics
 - **GVHD:** Hồ Nhựt Minh
-- **Trường:** Đại học Công nghệ Kỹ thuật TP.HCM (HUTECH)
+- **Trường:** Đại học Công nghệ Kỹ thuật TP.HCM (HCMUTE)
 - **Nhóm:** N12
 - **Thành viên:**
   1. Dương Đặng Hoài An - 23126002
@@ -26,8 +26,8 @@ pip install -r requirements.txt
 ML_Brazilian_Ecommerce_N12_HCMUTE_2026/
 ├── Appthu.py              # Code chính Streamlit
 ├── requirements.txt       # Thư viện yêu cầu
-├── README.md              # File này
+├── README.md              # File hướng dẫn
 ├── .gitignore             # Loại bỏ file không cần
-├── data/                  # 9 file CSV gốc (không upload - tự download)
+├── data/                  # 9 file CSV gốc (download:https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 ├── data_with_clusters.csv # Data đã xử lý (không upload - download từ Drive)
 └── models/                # Model đã train (Tuần 2-3)
