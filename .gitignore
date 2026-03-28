@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# Data files (QUAN TRỌNG - KHÔNG upload)
+data/*.csv
+data_with_clusters.csv
+data_cleaned.csv
+*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+*.log
+
+# Streamlit
+.streamlit/
+
+# Models (tuần 2 mới dùng)
+models/*.pkl
+models/*.joblib
