@@ -19,7 +19,7 @@
 pip install -r requirements.txt
 
 1. Download file data_with_clusters.csv từ Google Drive:
-   [https://drive.google.com/file/d/1KGVV0E6tq9neASkoDnfGvl_b9M-Iv7cf/view?usp=sharing]
+   https://drive.google.com/drive/folders/1rPho9bIkuaEGDI37GloLLSmuFz2roACo?usp=drive_link
 2. Đặt file vào folder project (cùng cấp với Appthu.py)
 3. Chạy: streamlit run Appthu.py
 
@@ -29,5 +29,14 @@ ML_Brazilian_Ecommerce_N12_HCMUTE_2026/
 ├── README.md              # File hướng dẫn
 ├── .gitignore             # Loại bỏ file không cần
 ├── data/                  # 9 file CSV gốc (download:https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-├── data_with_clusters.csv # Data đã xử lý (không upload - download từ Drive)
-└── models/                # Model đã train (Tuần 2-3)
+├── master_clean.csv       # Data đã xử lý (không upload - download từ Drive)
+└── master_dashboard.csv
+├── master_dataframe.csv
+├── classification_results.csv
+├── data_summary.csv
+├── regression_results.csv
+├── rfm_analysis.csv
+├── rfm_statistics.csv
+├── rfm_with_clusters.csv
+├── X_transformed.npy
+└── y_target.joblib
