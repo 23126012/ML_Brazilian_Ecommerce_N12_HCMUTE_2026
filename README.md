@@ -1,5 +1,8 @@
-# 🛒 Brazilian E-Commerce Analytics
+# 🛒 PHÂN TÍCH THƯƠNG MẠI ĐIỆN TỬ BRAZIL
 
+**Big Data Analytics - Machine Learning Project**  
+**Nhóm 12 - HUTECH BIGDATA2026**
+---
 ## 📋 Thông tin nhóm
 - **Môn học:** Machine Learning / Python for Data Analytics
 - **GVHD:** Hồ Nhựt Minh
@@ -11,32 +14,68 @@
   3. Nguyễn Thị Ngọc Hà - 23126012
   4. Huỳnh Thị Trà My - 23126027
 
-## Cách chạy ứng dụng
+## 📖 MÔ TẢ DỰ ÁN
 
-### Bước 1: Cài đặt Python và thư viện
+Ứng dụng Streamlit phân tích dữ liệu thương mại điện tử Brazil (Olist Dataset) với các chức năng:
+- 📊 Dashboard tổng quan
+- 👥 Phân khúc khách hàng (RFM + Clustering)
+- ⭐ Hệ thống khuyến nghị sản phẩm
+- 🛒 Phân tích giỏ hàng (Market Basket Analysis)
+- 🎯 Dự đoán review score bằng Machine Learning
+
+---
+
+## 🚀 CÀI ĐẶT & CHẠY ỨNG DỤNG
+
+### **Yêu cầu hệ thống**
+- Python 3.8 trở lên
+- pip (Python package manager)
+
+### **Bước 1: Cài đặt các packages cần thiết**
+
 ```bash
-# Yêu cầu: Python 3.8 trở lên
-pip install -r requirements.txt
+pip install -r requirements.txt / cài thủ công: pip install streamlit pandas numpy plotly scikit-learn joblib
 
-1. Download file data_with_clusters.csv từ Google Drive:
-   https://drive.google.com/drive/folders/1rPho9bIkuaEGDI37GloLLSmuFz2roACo?usp=drive_link
-2. Đặt file vào folder project (cùng cấp với Appthu.py)
-3. Chạy: streamlit run Appthu.py
+## **Bước 2: chạy ứng dụng: streamlit run N12_App.py
+HOẶC: python -m streamlit run N12_App.py
+---
 
-ML_Brazilian_Ecommerce_N12_HCMUTE_2026/
-├── Appthu.py              # Code chính Streamlit
-├── requirements.txt       # Thư viện yêu cầu
-├── README.md              # File hướng dẫn
-├── .gitignore             # Loại bỏ file không cần
-├── data/                  # 9 file CSV gốc (download:https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-├── master_clean.csv       # Data đã xử lý (không upload - download từ Drive)
-└── master_dashboard.csv
-├── master_dataframe.csv
-├── classification_results.csv
-├── data_summary.csv
-├── regression_results.csv
-├── rfm_analysis.csv
-├── rfm_statistics.csv
-├── rfm_with_clusters.csv
-├── X_transformed.npy
-└── y_target.joblib
+## Cấu trúc thư mục:
+
+N12_CKBIGDATA/
+│
+├── 📄 N12_App.py                      # File chính Streamlit App
+├── 📄 requirements.txt                # Danh sách packages Python
+├── 📄 .gitignore                      # Git ignore file
+│
+├── 📊 DATA FILES (CSV)
+│   ├── olist_orders_dataset.csv       # 99,441 đơn hàng
+│   ├── olist_customers_dataset.csv    # 99,441 khách hàng
+│   ├── olist_order_items_dataset.csv  # 112,650 sản phẩm
+│   ├── olist_order_payments_dataset.csv  # 103,886 thanh toán
+│   ├── olist_order_reviews_dataset.csv   # 99,224 đánh giá
+│   ├── olist_products_dataset.csv     # 32,951 sản phẩm
+│   ├── olist_sellers_dataset.csv      # 3,095 người bán
+│   ├── olist_geolocation_dataset.csv  # 1,000,163 vị trí
+│   ├── product_category_name_translation.csv  # 71 danh mục
+│   ├── rfm_analysis.csv               # RFM metrics (96,096 customers)
+│   ├── rfm_with_clusters.csv          # RFM + Clusters (KMeans + GMM)
+│   ├── association_rules.csv          # FP-Growth rules (14 columns)
+│   └── file_structure_summary.csv     # Summary của tất cả files
+│
+└── 🤖 ML MODELS (PKL)
+    ├── full_pipeline.pkl              # Pipeline dự đoán review score
+    ├── best_review_classifier.pkl     # Classifier review (backup)
+    ├── best_payment_regressor.pkl     # Regressor payment value
+    └── tfidf_vectorizer.pkl           # TF-IDF Vectorizer
+---
+Nguồn dữ liệu:
+Dataset: Brazilian E-Commerce Public Dataset by Olist
+Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+Thời gian: 2016-2018
+Vị trí: Brazil
+---
+🙏 LỜI CẢM ƠN
+Cảm ơn giảng viên và các bạn đã hỗ trợ trong quá trình thực hiện project!
+© 2026 - NHÓM 12 - BIGDATA2026
+Built with ❤️ using Streamlit
