@@ -1,7 +1,7 @@
 # 🛒 PHÂN TÍCH THƯƠNG MẠI ĐIỆN TỬ BRAZIL
 
 **Big Data Analytics - Machine Learning Project**  
-**Nhóm 12 - HUTECH BIGDATA2026**
+**Nhóm 12 - BIGDATA2026**
 ---
 ## 📋 Thông tin nhóm
 - **Môn học:** Machine Learning / Python for Data Analytics
