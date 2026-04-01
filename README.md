@@ -41,9 +41,12 @@ HOẶC: python -m streamlit run N12_App.py
 ---
 
 ```
-## Link lưu data: https://drive.google.com/drive/folders/1pceMuoiJjko6TTZmL2BQYn9LkcBM0Jsx
-## Cấu trúc thư mục:
 
+---
+## Link lưu data: https://drive.google.com/drive/folders/1pceMuoiJjko6TTZmL2BQYn9LkcBM0Jsx
+---
+## Cấu trúc thư mục:
+```bash
 N12_CKBIGDATA/
 │
 ├── 📄 N12_App.py                      # File chính Streamlit App
@@ -76,6 +79,7 @@ Dataset: Brazilian E-Commerce Public Dataset by Olist
 Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 Thời gian: 2016-2018
 Vị trí: Brazil
+```
 ---
 🙏 LỜI CẢM ƠN
 Cảm ơn giảng viên và các bạn đã hỗ trợ trong quá trình thực hiện project!
