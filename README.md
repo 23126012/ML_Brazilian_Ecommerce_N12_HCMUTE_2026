@@ -40,6 +40,8 @@ pip install -r requirements.txt / cài thủ công: pip install streamlit pandas
 HOẶC: python -m streamlit run N12_App.py
 ---
 
+```
+## Link lưu data: https://drive.google.com/drive/folders/1pceMuoiJjko6TTZmL2BQYn9LkcBM0Jsx
 ## Cấu trúc thư mục:
 
 N12_CKBIGDATA/
@@ -69,7 +71,7 @@ N12_CKBIGDATA/
     ├── best_payment_regressor.pkl     # Regressor payment value
     └── tfidf_vectorizer.pkl           # TF-IDF Vectorizer
 ---
-Nguồn dữ liệu:
+Nguồn dữ liệu gốc:
 Dataset: Brazilian E-Commerce Public Dataset by Olist
 Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 Thời gian: 2016-2018
