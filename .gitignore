@@ -7,12 +7,22 @@ __pycache__/
 env/
 venv/
 *.egg-info/
+dist/
+build/
 
-# Data files (QUAN TRỌNG - KHÔNG upload)
-data/*.csv
-data_with_clusters.csv
-data_cleaned.csv
-*.csv
+# Jupyter
+.ipynb_checkpoints
+
+# Large data files
+olist_*.csv
+*.pkl
+*.npy
+
+# Output files
+rfm_*.csv
+rfm_*.npy
+top_10_association_rules.csv
+final_model_regression.pkl
 
 # IDE
 .vscode/
@@ -20,13 +30,6 @@ data_cleaned.csv
 *.swp
 *.swo
 
-# Environment
-.env
-*.log
-
-# Streamlit
-.streamlit/
-
-# Models (tuần 2 mới dùng)
-models/*.pkl
-models/*.joblib
+# OS
+.DS_Store
+Thumbs.db
