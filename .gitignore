@@ -13,10 +13,12 @@ build/
 # Jupyter
 .ipynb_checkpoints
 
-# Large data files
-olist_*.csv
+# Large data files (QUAN TRỌNG)
+*.csv
 *.pkl
 *.npy
+*.parquet
+*.h5
 
 # Output files
 rfm_*.csv
@@ -24,12 +26,10 @@ rfm_*.npy
 top_10_association_rules.csv
 final_model_regression.pkl
 
-# IDE
+# IDE & OS
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS
 .DS_Store
 Thumbs.db
