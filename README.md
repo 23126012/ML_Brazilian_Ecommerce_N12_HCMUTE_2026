@@ -46,33 +46,54 @@ NHÓM 12
 
 ```bash
 # ==============================================================================
-# BƯỚC 1: Clone repository từ GitHub về máy
+# BƯỚC 1: Clone repository từ GitHub
 # ==============================================================================
 git clone https://github.com/23126012/ML_Brazilian_Ecommerce_N12_HCMUTE_2026.git
 cd CK BIGDATA final
 
 # ==============================================================================
-# BƯỚC 2: Tải dữ liệu & model đã xử lý sẵn (Pre-processed & Pre-trained)
+# BƯỚC 2: Tải dữ liệu từ Google Drive
 # ==============================================================================
-# 🔗 Link Google Drive: https://drive.google.com/drive/folders/1pceMuoiJjko6TTZmL2BQYn9LkcBM0Jsx
+# 🔗 Link: https://drive.google.com/drive/folders/1pceMuoiJjko6TTZmL2BQYn9LkcBM0Jsx
 #
 # 📥 Hướng dẫn:
-# 1. Download toàn bộ file .csv và .pkl từ link trên.
-# 2. GIẢI NÉN (nếu có) và COPY TOÀN BỘ file vào THƯ MỤC GỐC của project.
-#    ⚠️ QUAN TRỌNG: Các file phải nằm CÙNG CẤP với file Appfinal.py.
-#    Sau bước này, bạn sẽ có:
+# 1. Mở link trên → Download TOÀN BỘ file (.csv, .pkl, .npy, .html)
+# 2. GIẢI NÉN (nếu có) 
+# 3. COPY TOÀN BỘ file vào THƯ MỤC GỐC (cùng cấp với Appfinal.py)
+#
+# ✅ Sau bước này, bạn sẽ có:
 #    - 9 file dataset gốc (olist_*.csv)
 #    - 8 file data đã xử lý (rfm_*.csv, tfidf_vectorizer.pkl, etc.)
-#    - Chưa có: Các file model (.pkl) → Sẽ tạo ở Bước 4
+#
+# ❌ Chưa có: Các file model (.pkl) → Sẽ tạo ở Bước 4
 
 # ==============================================================================
-# BƯỚC 3: Cài đặt dependencies & Khởi chạy ứng dụng
+# BƯỚC 3: Cài đặt dependencies
 # ==============================================================================
 pip install -r requirements.txt
+
+# ==============================================================================
+# BƯỚC 4: Huấn luyện Model (BẮT BUỘC - Chạy 1 lần)
+# ==============================================================================
+# ⚠️ QUAN TRỌNG: App cần các file model này để chạy. Không bỏ qua bước này!
+#
+# Train Random Forest (Dự đoán review score)
+python train_model.py
+# → Sinh ra: full_pipeline.pkl, label_encoders.pkl
+#
+# Train SVD (Khuyến nghị sản phẩm)
+python train_svd_model.py
+# → Sinh ra: svd_model.pkl, customer_to_idx.pkl, product_to_idx.pkl, all_products.pkl
+#
+# ⏱️ Thời gian: ~2-5 phút cho mỗi script
+
+# ==============================================================================
+# BƯỚC 5: Khởi chạy ứng dụng Streamlit
+# ==============================================================================
 streamlit run Appfinal.py
 
-# > Ứng dụng sẽ tự động mở tại: http://localhost:8501
-# > Dữ liệu & model sẽ được load tự động (< 5 giây). Sẵn sàng demo!
+# > Ứng dụng sẽ mở tại: http://localhost:8501
+# > 6 trang chức năng đã sẵn sàng!
 ```
 ---
 📁 CẤU TRÚC DỰ ÁN
